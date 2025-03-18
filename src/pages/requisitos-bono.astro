@@ -1,0 +1,84 @@
+---
+import "../styles/global.css";
+---
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Requisitos del Bono de Techo Propio - Yarlos Inmobiliario</title>
+  <link rel="stylesheet" href="/styles/global.css" />
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    /* Asegura que el body ocupe toda la altura de la ventana */
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    /* El contenido principal crece para ocupar el espacio disponible */
+    .main-content {
+      flex: 1;
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-900 font-sans">
+  <!-- Navbar -->
+  <nav class="fixed top-0 left-0 w-full bg-white shadow-md z-50">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <a href="/" class="text-xl font-bold text-blue-600 flex items-center space-x-2">
+        <img src="/logo.jpg" alt="Logo" class="w-8 h-8">
+        <span>Yarlos Grupo Inmobiliario</span>
+      </a>
+      <div class="hidden md:flex space-x-8">
+        <a href="index.html" class="text-gray-700 hover:text-blue-600 transition duration-300">Inicio</a>
+        <a href="requisitos.html" class="text-gray-700 hover:text-blue-600 transition duration-300">Requisitos</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Contenido Principal -->
+  <main class="main-content pt-24">
+    <!-- Sección de Requisitos -->
+    <section id="requisitos" class="py-16 bg-gray-50">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center mb-8">REQUISITOS PARA EL BONO DE TECHO PROPIO 2025</h2>
+        <div class="max-w-2xl mx-auto bg-white p-8 rounded-lg shadow-md">
+          <p class="text-xl font-semibold mb-4 text-blue-600">BONO: S/46,545</p>
+          <ul class="space-y-4 text-gray-700">
+            <li class="flex items-start">
+              <span class="mr-2">✔️</span>
+              <span>Conformar un grupo familiar.</span>
+            </li>
+            <li class="flex items-start">
+              <span class="mr-2">✔️</span>
+              <span>Ingreso familiar menor a S/3,715.</span>
+            </li>
+            <li class="flex items-start">
+              <span class="mr-2">✔️</span>
+              <span>No tener propiedades registradas en SUNARP.</span>
+            </li>
+            <li class="flex items-start">
+              <span class="mr-2">✔️</span>
+              <span>No haber recibido beneficios del Estado.</span>
+            </li>
+          </ul>
+          <div class="mt-8 text-center">
+            <a href="index.html" class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition duration-300">Volver al Inicio</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-blue-900 text-white py-8">
+    <div class="container mx-auto px-6 text-center">
+      <p>&copy; 2025 Yarlos As Inmobiliario. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+</body>
+</html>
